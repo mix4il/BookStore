@@ -1,38 +1,20 @@
-export const products = [
-    {
-      title: 'Программирование на C++',
-      fio: "Васильев А.Н.",
-      picture: 'https://cdn1.ozone.ru/s3/multimedia-m/wc1200/6065960986.jpg',
-      date: '2016 г.',
-      isbn: '978-5-699-87445-3',
-      price: 1500,
-      quantity: 5,
-    },
-    {
-        title: 'Справочник JavaScript',
-        fio: "Никольский А.П.",
-        picture: 'https://cdn1.ozone.ru/s3/multimedia-e/wc1200/6067431542.jpg',
-        date: '2018 г.',
-        isbn: '978-5-94387-333-1',
-        price: 399,
-        quantity: 13,
-      },
-      {
-        title: 'Изучаем Python',
-        fio: "Лутц Марк",
-        picture: 'https://cdn1.ozone.ru/multimedia/wc1200/1037901189.jpg',
-        date: '2019 г.',
-        isbn: '978-5-907144-52-1',
-        price: 1999,
-        quantity: 4,
-      },
-      {
-        title: 'Изучаем Python',
-        fio: "Лутц Марк",
-        picture: 'https://cdn1.ozone.ru/multimedia/wc1200/1037901189.jpg',
-        date: '2019 г.',
-        isbn: '978-5-907144-52-1',
-        price: 1999,
-        quantity: 4,
-      },
-  ];
+export  class Products {
+  public title: string;
+  public author: string;
+  public picture: string;
+  public isbn: string;
+  public date: string;
+  public price: number;
+  public quantity: number;
+
+  constructor(title: string, author: string, picture:string,date: string, isbn: string, price:number, quantity:number){
+    this.title = title;
+    this.author = author;
+    this.picture = picture;
+    this.date= date;
+    this.isbn = isbn;
+    this.price = price;
+    this.quantity = quantity;
+  }
+
+} 

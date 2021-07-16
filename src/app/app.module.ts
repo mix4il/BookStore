@@ -10,6 +10,7 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { MainLayoutComponent } from './shared/main-layout/main-layout.component';
 import { ProductComponent } from './product/product.component';
+import { ProductService } from './product.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { ProductComponent } from './product/product.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 

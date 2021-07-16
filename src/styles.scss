@@ -104,9 +104,29 @@ img {
     color: #111;
   }
 }
+
+.btn-delete {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  border-radius: .5rem;
+
+  &:disabled {
+    cursor: not-allowed;
+    background: var(--light-color);
+    color: #111;
+  }
+}
 .btn-cart{
   display: inline-block;
-  background:rgb(16, 98, 119);
+  background:rgb(189, 241, 185);
   padding: 0.2rem 1.3rem;
   font-size: 1rem;
   border: none;
@@ -116,6 +136,7 @@ img {
   outline: none;
   border-radius: .5rem;
 }
+
 .btn-link {
   background: none;
   padding: 0;
@@ -285,13 +306,13 @@ table th {
   }
 
   a {
-    color: rgb(117, 230, 51);
+    color: rgb(0, 1, 5);
     padding: 0.45rem;
     margin: 0 0.25rem;
     opacity: .8;
 
     &:hover {
-      color: rgb(94, 255, 0);
+      color: rgb(0, 0, 0);
       opacity: 1;
     }
   }

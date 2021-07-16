@@ -1,1 +1,27 @@
-<p>cart-page works!</p>
+<div class="container bg-light">
+    <div *ngIf="cartProduct.length >  0; else empty" class="text-center">
+        <h1>Ваша корзина:</h1>
+        <hr>
+        <table>
+            <tbody>
+                <tr></tr>
+                <tr *ngFor="let product of cartProduct">
+                    <td>{{product.title}}</td>
+                    <td>{{product.author}}</td>
+                    <td>{{product.price}} рублей</td>
+                    <td>{{product.quantity}} шт.</td>
+                    <td>
+                        <div class="btn-delete btn-danger" (click)="remove(product)">Удалить товар</div>
+                    </td>    
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3 class="right">Общая стоимость: {{totalPrice}} руб.</h3>
+        <div class="btn btn-success">Оформить заказ</div>
+    </div>
+</div>
+
+<ng-template #empty>
+    <h1 class="text-center">Корзина пустая, добавьте товары</h1>
+</ng-template>

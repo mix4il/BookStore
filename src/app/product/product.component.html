@@ -5,10 +5,11 @@
         <img [src]="product.picture">
     <div>
 
-    <h3>Автор: {{product.fio}}</h3>
+    <h3>Автор: {{product.author}}</h3>
     <h3>ISBN: {{product.isbn}}</h3>
     <h3>Дата выпуска: {{product.date}}</h3>
     <h1 >Цена: {{product.price}}</h1>
+    <h3 [style.color] = "product.quantity <=0 ? 'red' : 'green'">Количество экземпляров: {{product.quantity}}</h3>
+    <button [disabled]="product.quantity <= 0" type="button" class="btn btn-white" (click)="Add()">Добавить в корзину</button>
 
-    <button type="button" class="btn btn-white">Добавить в корзину</button>
 </div>
