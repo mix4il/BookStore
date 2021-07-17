@@ -1,5 +1,5 @@
 <div class="container bg-light">
-    <div *ngIf="cartProduct.length >  0; else empty" class="text-center">
+    <div *ngIf="cartProduct.length >  0; else empty" class="text-center" style="padding-bottom: 15px;">
         <h1>Ваша корзина:</h1>
         <hr>
         <table>
@@ -17,11 +17,15 @@
             </tbody>
         </table>
         <hr>
-        <h3 class="right">Общая стоимость: {{totalPrice}} руб.</h3>
-        <div class="btn btn-success">Оформить заказ</div>
+        <h2 class="right">Общая стоимость: {{totalPrice}} руб.</h2>
+        <div class="order">
+            <input type="text" placeholder="Введите имя для оформления заказа" [(ngModel)]="inputName">
+            <div *ngIf="inputName">
+                <div class="btn btn-success" (click)="checkout()">Оформить заказ</div>
+            </div>
+        </div>
     </div>
 </div>
-
 <ng-template #empty>
     <h1 class="text-center">Корзина пустая, добавьте товары</h1>
 </ng-template>

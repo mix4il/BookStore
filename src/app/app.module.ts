@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-
+import { FormsModule } from '@angular/forms';
 import { CardComponent } from './card/card.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
@@ -24,7 +23,8 @@ import { ProductService } from './product.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
