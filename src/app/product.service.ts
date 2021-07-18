@@ -13,8 +13,8 @@ export class ProductService {
     '978-5-94387-333-1',399,13),
     new Products('Изучаем Python',"Лутц Марк",'https://cdn1.ozone.ru/multimedia/wc1200/1037901189.jpg','2019 г.',
     '978-5-907144-52-1',1999,4),
-    new Products('Изучаем Python',"Лутц Марк",'https://cdn1.ozone.ru/multimedia/wc1200/1037901189.jpg','2019 г.',
-    '978-5-907144-52-1',1999,4),
+    new Products('Карманный справочник', 'Лутц Марк', 'https://cdn1.ozone.ru/multimedia/wc1200/1027591430.jpg','2016',
+    '978-5-907114-60-9', 699, 2),
   ];
 
   private cartProduct:Products[] = [];
