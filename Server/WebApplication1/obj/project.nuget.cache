@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7VF7TRJJoL1qtkQnyanw0rO17ceVtHMnsabwTnWeWoyZJp/oZE0tXcaO8FgqRnKeUSPXSVPf4JZNCMKVt3LDkQ==",
+  "dgSpecHash": "cRKV1ByBmhbxdrHD5zniBu3Ot9X1XwM+Xt6JoyCqdTds5MgcwzBlR2c6muU40Ucal5RCe+EWJhaGEBQy5LqqBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Михаил\\BookStore\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\Михаил\\BookStore-1\\Server\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

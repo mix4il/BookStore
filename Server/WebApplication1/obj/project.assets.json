@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Михаил\\BookStore\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\Михаил\\BookStore-1\\Server\\WebApplication1\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\Михаил\\BookStore\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectPath": "C:\\Users\\Михаил\\BookStore-1\\Server\\WebApplication1\\WebApplication1.csproj",
       "packagesPath": "C:\\Users\\Михаил\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Михаил\\BookStore\\WebApplication1\\WebApplication1\\obj\\",
+      "outputPath": "C:\\Users\\Михаил\\BookStore-1\\Server\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Михаил\\AppData\\Roaming\\NuGet\\NuGet.Config",
