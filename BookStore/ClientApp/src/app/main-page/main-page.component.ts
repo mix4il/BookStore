@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
+import { Products } from '../products';
 
 
 
@@ -10,8 +11,8 @@ import { ProductService } from '../product.service';
 })
 export class MainPageComponent {
   
-  public products: any;
-  private _productService;
+  public products: Products [] = [];
+  private _productService: ProductService;
 
   constructor(ProductService: ProductService) {
     this._productService = ProductService;

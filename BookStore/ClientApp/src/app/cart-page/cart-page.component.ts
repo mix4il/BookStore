@@ -20,8 +20,7 @@ export class CartPageComponent implements OnInit {
   }
   
   ngOnInit(): void {
-     this.cartProduct = this._productService.getCartProduct();
-     this.totalPrice = this.getTotalPrice()
+    this.cartProduct = this._productService.getCartProduct();
   }
 
   getTotalPrice(){
