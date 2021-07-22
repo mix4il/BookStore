@@ -20,4 +20,5 @@
 * HTML
 * CSS (SCSS)
 * Angular(JS)
-* ASP.NET CORE 
+* ASP.NET CORE (C#)
+* NUnit (тестирование)
