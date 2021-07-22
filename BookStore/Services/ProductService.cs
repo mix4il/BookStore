@@ -35,12 +35,16 @@ namespace BookStore.Services
             {
                 throw new ArgumentException("Имя контакта должно быть задано");
             }
-            _logger.LogInformation("Список контактов был обновлен!");
+            _logger.LogInformation("Список книг был обновлен!");
             _productRepository.UpdateProducts(products);
         }
 
         public void AddOrder(Order order)
         {
+            if (String.IsNullOrEmpty(order.Name))
+            {
+                throw new ArgumentException("Имя в заказе пустое");
+            }
             Random rnd = new Random();
             order.Id = rnd.Next(0, 10000);
             order.TotalPrice = GetTotalPrice(order.Books);

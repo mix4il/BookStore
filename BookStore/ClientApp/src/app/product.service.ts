@@ -23,13 +23,17 @@ export class ProductService {
   private cartProduct:Products[] = [];
 
   constructor(private http: HttpClient){
-    this.http.get('/Product/GetAll').subscribe((data: any) => {
+/*    this.http.get('/Product/GetAll').subscribe((data: any) => {
       this.products = data
       console.log(data);
-    });
+    });*/
   }
 
-   getAll(){
+/*   getAll(){
+    return this.products;
+  }*/
+  async getAll() {
+    this.products = await this.http.get<Products[]>('/Product/GetAll').toPromise();
     return this.products;
   }
 
@@ -68,12 +72,12 @@ export class ProductService {
     }
   }
   public saveProduct() {
-    this.http.put('/Product/Save', this.products);
+    this.http.put('/Product/Save', this.products).toPromise();
     console.log(this.products);
   }
 
   public addOrder(order: Object) {
-    this.http.post('/Product/AddOrderFile', order);
+    this.http.post('/Product/AddOrderFile', order).toPromise();
     this.cartProduct = [];
   }
 }

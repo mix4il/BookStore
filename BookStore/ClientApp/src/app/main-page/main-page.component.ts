@@ -17,11 +17,9 @@ export class MainPageComponent {
   constructor(ProductService: ProductService) {
     this._productService = ProductService;
    }
-  ngOnInit(): void {
-    this.products = this._productService.getAll();
+  async ngOnInit() {
+    this.products = await this._productService.getAll();
   }
-
-
   share() {
     window.alert('The product has been shared!');
   }

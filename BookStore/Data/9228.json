@@ -1,0 +1,26 @@
+{
+  "Id": 9228,
+  "Name": "Михаил",
+  "TotalPrice": 4177,
+  "TotalQuantity": 3,
+  "Books": [
+    {
+      "Title": "Справочник JavaScript",
+      "Author": "Никольский А.П.",
+      "Picture": "https://cdn1.ozone.ru/s3/multimedia-e/wc1200/6067431542.jpg",
+      "isbn": "978-5-94387-333-1",
+      "Date": "2018 г.",
+      "Price": 399,
+      "Quantity": 1
+    },
+    {
+      "Title": "Изучаем Python",
+      "Author": "Лутц Марк",
+      "Picture": "https://cdn1.ozone.ru/multimedia/wc1200/1037901189.jpg",
+      "isbn": "978-5-907144-52-1",
+      "Date": "2019 г.",
+      "Price": 1999,
+      "Quantity": 2
+    }
+  ]
+}
