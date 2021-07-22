@@ -1,11 +1,32 @@
-{
-  {
-    "title": "���������������� �� C#",
-    "author": "",
-    "picture": null,
-    "isbn": "978-5-699-87445-3",
-    "date": "2016 �.",
-    "price": "1500",
-    "quantity": "1"
-  }
-}
+
+  [
+    {
+      "title": "Программирование на C++",
+      "author": "Васильев А.Н.",
+      "picture": "https://cdn1.ozone.ru/s3/multimedia-m/wc1200/6065960986.jpg",
+      "isbn": "978-5-699-87445-3",
+      "date": "2016 г.",
+      "price": "1500",
+      "quantity": "5"
+    },
+    {
+      "title": "Справочник JavaScript",
+      "author": "Никольский А.П.",
+      "picture": "https://cdn1.ozone.ru/s3/multimedia-e/wc1200/6067431542.jpg",
+      "isbn": "978-5-94387-333-1",
+      "date": "2018 г.",
+      "price": "399",
+      "quantity": "13"
+    },
+    {
+      "title": "Изучаем Python",
+      "author": "Лутц Марк",
+      "picture": "https://cdn1.ozone.ru/multimedia/wc1200/1037901189.jpg",
+      "isbn": "978-5-907144-52-1",
+      "date": "2019 г.",
+      "price": "1999",
+      "quantity": "3"
+    }
+  ]
+
+

@@ -21,7 +21,9 @@
         <div class="order">
             <input type="text" placeholder="Введите имя для оформления заказа" [(ngModel)]="inputName">
             <div *ngIf="inputName">
-                <div class="btn btn-success" (click)="checkout()">Оформить заказ</div>
+                <div class="btn btn-success" (click)="checkout({
+                     Id:0,Name:inputName,TotalPrice:0, TotalQuantity:0, Books:cartProduct}
+                     )">Оформить заказ</div>
             </div>
         </div>
         

@@ -1,0 +1,30 @@
+[
+      {
+        "title": "dsv C#",
+        "author": "ewf",
+        "picture": "https://cdn1.ozone.ru/s3/multimedia-m/wc1200/6065960986.jpg",
+        "date": "2016.",
+        "isbn": "978-5-699-87445-3",
+        "price": "1500",
+        "quantity": "1"
+    },
+    {
+      "title": "ddsv C#",
+      "author": "ewf",
+      "picture": "wef",
+      "date": "2016.",
+      "isbn": "978-5-699-87445-2",
+      "price": "1500",
+      "quantity": "1"
+  },
+  {
+    "title": "dsvdsv C#",
+    "author": "fewf",
+    "picture": "wef",
+    "date": "2016.",
+    "isbn": "978-5-699-87445-1",
+    "price": "1500",
+    "quantity": "5"
+  }
+ ]
+  

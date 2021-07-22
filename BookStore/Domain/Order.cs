@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace BookStore.Domain
 {
-    public class Orders
+    public class Order
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
-        public string TotalPrice { get; set; }
+        public int TotalPrice { get; set; }
         public int TotalQuantity { get; set; }
 
         public Product[] Books { get; set; }

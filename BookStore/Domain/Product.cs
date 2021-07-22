@@ -10,7 +10,9 @@ namespace BookStore.Domain
         public string Title { get; set; }
         public string Author { get; set; }
         public string Picture { get; set; }
+        public string isbn { get; set; }
         public string Date { get; set; }
+
         public int Price { get; set; }
         public int Quantity { get; set; }
 

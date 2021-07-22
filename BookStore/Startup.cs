@@ -1,9 +1,14 @@
+using BookStore.Domain;
+using BookStore.Repositories;
+using BookStore.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.IO;
 
 namespace BookStore
 {
@@ -19,6 +24,16 @@ namespace BookStore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var productFileInfo = new FileInfo(@"C:\Users\Михаил\Downloads\BookStore\BookStore\BookStore\Data\products.json");
+/*                Path.Combine(
+                    AppContext.BaseDirectory,
+                    Configuration.GetSection(nameof(Product))["FilePath"]));*/
+
+            services
+                .AddTransient<IProductRepository>(provider => new JsonProductRepository(productFileInfo))
+                .AddTransient<IProductService, ProductService>()
+                .AddControllers();
+
             services.AddControllersWithViews();
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>

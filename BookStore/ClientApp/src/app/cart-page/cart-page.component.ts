@@ -9,7 +9,7 @@ import { Products } from '../products';
 })
 export class CartPageComponent implements OnInit {
 
-  private _productService: any;
+  private _productService: ProductService;
   public cartProduct: Products[]= [];
   public totalPrice: any;
 
@@ -35,7 +35,12 @@ export class CartPageComponent implements OnInit {
     this._productService.removeCart(product);
   }
 
-  checkout(){
+  checkout(order: Object) {
     window.alert("Заказ оформлен!");
+    console.log(order);
+    this._productService.addOrder(order);//создание json файла
+    this.cartProduct = []; //обнуление корзины товаров
+    this._productService.saveProduct();//сохранение состояния товаров
   }
+
 }
